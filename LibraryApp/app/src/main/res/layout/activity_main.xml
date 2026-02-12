@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Neon_Blue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Library Manager"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#333"
+            android:layout_marginBottom="20dp"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="4">
+
+            <Button
+                android:id="@+id/btnProfile"
+                android:text="My Profile"
+                android:drawableTop="@android:drawable/ic_menu_myplaces"
+                android:style="@style/DashboardButton"/>
+
+            <Button
+                android:id="@+id/btnBookStatus"
+                android:text="Book Status"
+                android:drawableTop="@android:drawable/ic_menu_search"
+                android:style="@style/DashboardButton"/>
+
+            <Button
+                android:id="@+id/btnReservation"
+                android:text="Reserve Book"
+                android:drawableTop="@android:drawable/ic_menu_agenda"
+                android:style="@style/DashboardButton"/>
+
+            <Button
+                android:id="@+id/btnLostFound"
+                android:text="Lost and Found"
+                android:drawableTop="@android:drawable/ic_menu_compass"
+                android:style="@style/DashboardButton"/>
+
+            <Button
+                android:id="@+id/btnReport"
+                android:text="Report Issue"
+                android:drawableTop="@android:drawable/ic_menu_report_image"
+                android:style="@style/DashboardButton"/>
+
+            <Button
+                android:id="@+id/btnLockers"
+                android:text="Locker Rental"
+                android:drawableTop="@android:drawable/ic_secure"
+                android:style="@style/DashboardButton"/>
+
+            <Button
+                android:id="@+id/btnFines"
+                android:text="Fines and Pay"
+                android:drawableTop="@android:drawable/ic_input_add"
+                android:layout_columnSpan="2"
+                android:layout_gravity="fill_horizontal"
+                android:style="@style/DashboardButton"/>
+
+        </GridLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login / Admin Access"
+            android:backgroundTint="@color/Dark_Blue"
+            android:layout_marginTop="30dp"/>
+
+    </LinearLayout>
+</ScrollView>
