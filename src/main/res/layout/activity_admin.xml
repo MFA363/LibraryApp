@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/txtWelcomeAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_admin_get_to_work"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="32dp"
+            android:gravity="center"
+            android:textColor="@color/Salmon"/>
+
+        <Button
+            android:id="@+id/btnManageUsers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/manage_users"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/Terra_Cotta"/>
+
+        <Button
+            android:id="@+id/btnManageBooks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/manage_books"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/Light_Coral"/>
+
+        <Button
+            android:id="@+id/btnViewReports"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/view_reports"
+            android:layout_marginBottom="32dp"
+            android:textColor="@color/Light_Salmon" />
+
+        <Button
+            android:id="@+id/btnAdminLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/log_out"
+            android:backgroundTint="@color/Dark_Red"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+</ScrollView>
